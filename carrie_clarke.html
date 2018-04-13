@@ -5,6 +5,27 @@
     <title>Carrie A. Clarke CV</title>
     <link rel="stylesheet" href="css/cv-styles.css">
     <link <link href="https://fonts.googleapis.com/css?family=Suravaram|Arima+Madurai" rel="stylesheet">
+    <style media="screen">
+    /*background image styling(helps negate glitch)*/
+      .img2{
+        background-image: url(images/photo2.jpg);
+        background-size: cover;
+        grid-column: 3/5;
+        grid-row: 2/5;
+        margin-left: 115px;
+        margin-bottom: 50px;
+      }
+
+
+      .img3{
+        background-image: url(images/photo3.jpg);
+        background-size: cover;
+        grid-column: 1/4;;
+        grid-row: 3/6;
+        margin-left: 150px;
+        margin-top: 25px;
+      }
+    </style>
   </head>
   <body>
 
@@ -18,23 +39,29 @@
     </nav>
 
 <!--about me section-->
-        <div class="about-container" id="about-jump">
 
-          <div class="namecard">Carrie A. Clarke</div>
-          <div class="photos"><img class="id-photo" src="images/photo1.jpg" alt=""></div>
-          <div class="titlecard">
-            <div class="">Junior Web Developer</div>
-            <div class="">link icons</div>
-          </div>
-          <div class="about">
-            <p>A reliable, adaptable and thoughtful person, who enjoys expanding their knowledge base and new experiences. Flexible and a proponent of systems thinking, with an interest in using technology to assist in the forensic and archaeological fields.</p>
-          </div>
+      <div class="about-section" id="about-jump">
 
+        <div class="img2"></div>
+        <div class="img3"></div>
+
+        <div class="namecard">
+          <h1>Carrie A. Clarke</h1>
         </div>
 
-        <div class="">
-          <img class="graphic" src="images/placeholder1.jpg" alt="">
+        <div class="titlecard">
+          <div class="">Junior Web Developer</div>
+          <div class=""><a href="#"><img src="images/icon.jpg" alt=""> </a>
+            <a href="#"><img src="images/icon.jpg" alt=""> </a>
+            <a href="#"><img src="images/icon.jpg" alt=""> </a>
+          </div>
         </div>
+
+        <div class="about">
+          <p>A reliable, adaptable and thoughtful person, who enjoys expanding their knowledge base and new experiences. Flexible and a proponent of systems thinking, with a wide scope of passions and an interest in using technology to assist in the forensic and archaeological fields.</p>
+        </div>
+
+      </div>
 
 <!--work experience section-->
         <div class="exp-container">
@@ -64,10 +91,10 @@
 
           <h1 id="skills-jump">Skills</h1>
 
-          <p>skills skills skills skills skills</p>
-          <p>skills skills skills skills skills</p>
-          <p>skills skills skills skills skills</p>
-          <p>skills skills skills skills skills</p>
+          <p>public speaking</p>
+          <p>assertive</p>
+          <p>reliable</p>
+          <p>self-managment</p>
 
         </div>
 
@@ -97,7 +124,7 @@
         </div>
 
         <div class="">
-          <img class="graphic" src="images/placeholder1.jpg" alt="">
+          <img class="graphic" src="images/photo4.jpg" alt="">
         </div>
 
 <!--contact section-->
@@ -106,7 +133,13 @@
           <h1 id="contact-jump">Contacts</h1>
 
           <p><a id="email-link" href="mailto:silver.6.clarke@gmail.com?Subject=Hello">Email</a></p>
-          <p>Phone: 072 997 5545</p>
+          <p class="phone-number">Phone: 072 997 5545</p>
+
+          <div class="icon-links">
+            <a href="#"><img src="images/icon.jpg" alt=""> </a>
+            <a href="#"><img src="images/icon.jpg" alt=""> </a>
+            <a href="#"><img src="images/icon.jpg" alt=""> </a>
+          </div>
 
         </div>
 
