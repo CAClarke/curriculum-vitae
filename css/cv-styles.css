@@ -31,11 +31,11 @@ a{
 }
 
 a:hover{
-  color: #00c1de
+  color: #00b18a;
 }
 
 a:active{
-  color: #00c1de
+  color: #00b18a;
 }
 
 h1{
@@ -124,6 +124,10 @@ h1{
   justify-content:space-between;
   grid-column: 2/4;
   grid-row: 2/3;
+}
+
+#icon:hover{
+  transform: rotate(25deg);
 }
 
 #email-link{
