@@ -1,0 +1,155 @@
+
+$fontColor:#00274e;
+$font-family1:"Suravaram", sans-serif;
+$font-family2:"Arima Madurai", serif;
+
+body{
+  background:linear-gradient(to bottom, #00274e 0%, #00ced1 100%); color:$fontColor;
+  font-family:$font-family1;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+div{
+  margin:30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10%;
+}
+
+nav{
+  /*opacity: 0%;*/
+  display:flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: -10px;
+  position: fixed;
+}
+
+a{
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  font-family:$font-family2;
+  color: #4169e1;
+}
+
+a:hover{
+  color: #00b18a;
+}
+
+a:active{
+  color: #00b18a;
+}
+
+h1{
+  margin-left: 12px;
+}
+
+/*about section*/
+.about-section{
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 2fr 1fr;
+  grid-template-rows: 100px 300px 30px 200px 150px 35px;
+  text-align: center;
+}
+
+.namecard{
+  color: white;
+  font-size: 30px;
+  grid-column: 2/4;
+  grid-row: 2/3;
+  margin-top: 150px;
+}
+
+.titlecard{
+  font-size: 22px;
+  grid-column: 2/4;
+  grid-row: 4/5;
+  margin-left: -800px;
+}
+
+.about{
+  color: white;
+  font-size: 22px;
+  grid-column: 2/5;
+  grid-row: 5/6;
+  margin-left: 230px;
+  margin-right: 120px;
+}
+
+/*experience section*/
+.exp-container{
+  display: grid;
+  background-color: white;
+  grid-template-columns: 4fr 4fr 4fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+
+/*skills section*/
+.skills-container{
+  display: grid;
+  background-color: white;
+  grid-template-columns: 4fr 4fr 4fr 4fr 4fr 1fr;
+  grid-gap:10px;
+}
+
+/*education section*/
+.edu-container{
+  display: grid;
+  background-color: white;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(4, 25%);
+  grid-gap: 10px;
+}
+
+.graphic{
+  width: 1800px;
+  height: 200PX;
+}
+
+/*contact section*/
+.contact-container{
+  display: grid;
+  background-color: white;
+  grid-template-columns: 3fr 3fr 3fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.phone-number{
+  font-size: 25px;
+}
+
+.icon-links{
+  display: flex;
+  justify-content:space-between;
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+#icon:hover{
+  transform: rotate(25deg);
+}
+
+#email-link{
+  font-size: 20px;
+  color: $fontColor;
+}
+
+/*top jump*/
+.top-link{
+  background-color: #00ced1;
+  color: $fontColor;
+  text-align: center;
+  margin: 50px 820px;
+  padding: 6px;
+}
+
+/*footer*/
+footer{
+  color: white;
+  text-align: right;
+  padding-right: 20px;
+}
