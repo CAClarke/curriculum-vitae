@@ -1,0 +1,21 @@
+a:hover{
+    color: $highlightColor;
+}
+
+a:active{
+    color: $highlightColor;
+}
+
+li:hover{
+    display: table;
+    margin: 0 auto;
+    font-family: $titleFont;
+    background: linear-gradient(120deg, #fff 0%, $highlightColor 50%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  #icon:hover{
+    animation: iconRotate 2s infinite;
+}
+
