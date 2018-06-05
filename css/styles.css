@@ -7,7 +7,7 @@ a:active {
 li:hover {
   display: table;
   margin: 0 auto;
-  font-family: "Abril Fatface", cursive;
+  font-family: "Montserrat", sans-serif;
   background: linear-gradient(120deg, #fff 0%, #e6007e 50%, #fff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
@@ -19,32 +19,24 @@ li:hover {
   grid-column: 2/4;
   grid-row: 2/3; }
 
-.edu_code, .edu_school, .edu_other, .exp_demonstrator, .exp_alt {
+.edu_code, .edu_school, .edu_other, .exp_supervisor, .exp_demonstrator, .exp_alt, .exp_dj {
   padding-top: 10px;
   padding-left: 50px;
   padding-right: 50px; }
 
-@media only screen and (max-device-width: 1570px) {
+@media only screen and (max-device-width: 1665px) {
   .about {
     line-height: 1;
     font-size: 50px; } }
-@media only screen and (max-device-width: 1100px) {
-  body {
-    color: #fff; }
-
-  #top_nav {
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; }
-
-  .about {
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
-
-  #edu_container {
-    font-weight: 100; }
+@media only screen and (max-device-width: 1300px) {
+  .director {
+    background-color: white;
+    opacity: 0.7;
+    z-index: -1;
+    height: 40px; }
 
   #exp_grid {
     height: auto;
-    color: #fff;
-    font-weight: 100;
     height: 560px; }
 
   .exp_demonstrator {
@@ -63,66 +55,47 @@ li:hover {
 
   #bottom_nav {
     background-color: #fff; } }
+@media only screen and (max-device-width: 1100px) {
+  #edu_container, #exp_container, #port_container {
+    line-height: 1; }
+
+  #edu_title {
+    margin: -18px; } }
 @keyframes iconRotate {
   0% {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
 body {
-  background-image: url(../img/idpic.jpg);
+  background-image: url(../img/me.jpg);
   background-repeat: no-repeat;
   background-size: contain;
-  font-family: "Nunito", sans-serif;
-  font-size: 18px;
-  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  text-align: left;
+  padding: 10px;
   line-height: 1.5; }
 
 a {
-  font-size: 40px;
-  color: black;
+  font-size: 22px;
+  color: #e6007e;
   text-decoration: none; }
 
+li {
+  list-style-type: none; }
+
 .director {
-  color: #e6007e; }
-
-#nav_body {
-  background-color: #003530;
-  opacity: 0.9;
-  width: 90%;
-  height: 100%;
-  margin: 0 auto;
-  grid-column: 2/7;
-  grid-row: 1/9;
-  display: none; }
-
-#top_nav {
-  color: transparent;
-  font-size: larger;
-  font-weight: bold;
-  font-family: "Abril Fatface", cursive;
-  line-height: 4; }
-
-#bottom_nav {
-  padding: 5px 35px 0 0;
+  color: #e6007e;
   text-align: right; }
-
-.email_link {
-  font-size: 12px; }
-
-.phone_number {
-  font-size: 15px; }
-
-#icon {
-  width: 40px; }
 
 #body_container {
   width: 100%;
   height: 100%;
-  margin: 0;
+  margin-left: -55px;
   padding: 0;
   display: grid;
   grid-template-columns: 12.5% repeat(5, 15%);
-  grid-template-rows: repeat(10, 90px);
+  grid-template-rows: repeat(10, 100px);
   grid-gap: 8px;
   font-weight: bold;
   line-height: 2; }
@@ -132,42 +105,61 @@ a {
   grid-row: 3/4;
   font-size: 35px;
   text-align: left;
-  padding: 10px; }
+  padding: 10px;
+  background-color: white;
+  opacity: 0.7;
+  z-index: -1;
+  height: 65px; }
 
 #title_card {
   grid-column: 5/7;
   grid-row: 4/5;
   font-size: 28px;
   text-align: left;
-  padding: 10px; }
+  padding: 10px;
+  background-color: white;
+  opacity: 0.7;
+  z-index: -1;
+  height: 55px; }
 
 #about_card {
   grid-column: 5/7;
-  grid-row: 6/8;
+  grid-row: 6/9;
   font-size: 20px;
   text-align: left;
-  padding: 10px; }
-
-#nav_btn {
-  grid-column: 7/8;
-  grid-row: 4/5;
-  position: relative; }
+  padding: 25px;
+  background-color: white;
+  opacity: 0.7;
+  z-index: -1; }
 
 #edu_btn {
   grid-column: 7/8;
-  grid-row: 5/6; }
+  grid-row: 4/5; }
 
 #exp_btn {
   grid-column: 7/8;
+  grid-row: 5/6; }
+
+#port_btn {
+  grid-column: 7/8;
   grid-row: 6/7; }
+
+#skills_btn {
+  grid-column: 7/8;
+  grid-row: 8/9; }
+
+#contact_btn {
+  grid-column: 7/8;
+  grid-row: 9/10; }
 
 #edu_container {
   background-color: #003530;
-  opacity: 0.9;
+  opacity: 0.8;
   grid-column: 2/7;
   grid-row: 2/9;
   display: none;
-  line-height: 3; }
+  line-height: 3;
+  color: #666666; }
 
 .edu_school {
   grid-column: 4/5;
@@ -175,32 +167,89 @@ a {
 
 #exp_container {
   background-color: #003530;
-  opacity: 0.9;
+  opacity: 0.7;
   grid-column: 2/7;
   grid-row: 2/9;
-  display: none; }
+  display: none;
+  color: #666666;
+  font-size: 18px; }
 
 #exp_grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr; }
+
+#exp_title {
+  margin-top: -10px; }
+
+.exp_supervisor {
+  grid-column: 1/2;
+  grid-row: 1/2; }
 
 .exp_demonstrator {
-  grid-column: 1/2; }
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin-top: -55px; }
 
 .exp_alt {
-  grid-column: 2/3; }
+  grid-column: 2/3;
+  grid-row: 1/2; }
+
+.exp_dj {
+  grid-column: 2/3;
+  grid-row: 2/3; }
+
+#responsibilities {
+  font-size: 14px !important; }
+
+#port_container {
+  background-color: #003530;
+  opacity: 0.8;
+  grid-column: 2/7;
+  grid-row: 2/9;
+  display: none;
+  line-height: 3;
+  padding-top: 40px;
+  color: #666666; }
+  #port_container img {
+    width: 120px; }
+  #port_container a {
+    margin-top: 25px; }
 
 #carousel_container {
-  height: 90px;
+  height: 100px;
+  text-align: left;
   position: relative;
   overflow: hidden;
   grid-column: 1/8;
   grid-row: 9/10;
   margin-top: 70px;
-  padding-top: 5px;
-  border-top: #003530 solid 2px; }
+  padding: 20px 0 5px 5px;
+  border-top: #003530 solid 2px;
+  background-color: white; }
 
 .item {
-  width: 90px; }
+  width: 80px; }
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  border-top: #003530 solid 2px;
+  padding: 10px 35px 0 0;
+  text-align: center;
+  background-color: white;
+  height: 70px;
+  margin-top: 20px; }
+
+.email_link {
+  grid-column: 1/2;
+  font-size: 18px; }
+
+.phone_number {
+  grid-column: 2/3;
+  font-size: 15px; }
+
+#icon {
+  width: 60px; }
 
 /*# sourceMappingURL=styles.css.map */

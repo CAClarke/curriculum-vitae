@@ -7,30 +7,19 @@
       <link rel="stylesheet" href="owl_carousel/owl.theme.default.min.css">
       <link rel="stylesheet" href="css/styles.css">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Nunito:400,800" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins" rel="stylesheet">
   </head>
   <body>   
 
     <div id="body_container">
-
-        <div id="nav_body">
-            <!-- top navbar -->
-            <nav id="top_nav" class="dropdown" >
-              <ul>
-                <li><a href="" class="nav_about link"> About</a></li>
-                <li  class="edu_toggle"><a href="#edu_container" class="nav_edu"> Education</a></li>
-                <li class="exp_toggle"><a href="#exp_container" class="nav_exp"> Experience</a></li>
-                <li><a href="#carousel_container" class="nav_skills"> Skills</a></li>
-                <li><a href="#bottom_nav"> Contact</a></li>
-              </ul>
-            
-            </nav>
-          </div>
+      <p id="key"></p>
 
       <!-- directors -->
-      <div id="nav_btn" class="director">&#x25b2</div>
-      <div id="edu_btn" class="edu_toggle director">&#x25c4</div>
-      <div id="exp_btn" class="exp_toggle director">&#x25b6</div>
+      <div id="edu_btn" class="edu_toggle director">education</div>
+      <div id="exp_btn" class="exp_toggle director">experience</div>
+      <div id="port_btn" class="port_toggle director">portfolio</div>
+      <div id="skills_btn" class="director"><a href="#carousel_container">skills</a></div>
+      <div id="contact_btn" class="director"><a href="#bottom_nav">contact</a></div>
 
       <!-- homepage -->
       <div id="name_card" class="about">Carrie Clarke</div>
@@ -42,20 +31,20 @@
           <h1 id="edu_title">Education</h1>
 
           <div class="edu_code">
-            <div class="">Web Development, Codespace, 2018</div>
+            <div class="">2018   - Web Development, Codespace</div>
 
           </div>
 
           <div class="edu_school">
-            <div class="">MSc(Medical Science) Anatomy, University of Cape Town, 2015</div>
-            <div class="">Hon(Medical Science) Biological Anthropology, University of Cape Town, 2009</div>
-            <div class="">BSc Archaeology and Environmental and Geographic Science, University of Cape Town, 2008</div>
-            <div class="">Matric, Rustenburg Girls' High School, 2004</div>
+            <div class="">2015   - MSc(Medical Science) Anatomy, University of Cape Town</div>
+            <div class="">2009   - Hon(Medical Science) Biological Anthropology, University of Cape Town</div>
+            <div class="">2008   - BSc Archaeology and Environmental and Geographic Science, University of Cape Town</div>
+            <div class="">2004   - Matric, Rustenburg Girls' High School</div>
           </div>
 
           <div class="edu_other">
-            <div class="">TESOL, Cape Town School of English, 2010</div>
-            <div class="">ICDL, Rustenburg Girls' High School, 2009</div>
+            <div class="">2010   - TESOL, Cape Town School of English</div>
+            <div class="">2009   - ICDL, Rustenburg Girls' High School</div>
           </div>
       </div>
 
@@ -63,20 +52,42 @@
       <div id="exp_container" class="animated fadeInUpBig">
           <h1 id="exp_title">Experience</h1>
           <div id="exp_grid">
+            <div class="exp_supervisor">
+                <p>April 2018</p>
+              <p>Volunteer Supervisor</p>
+              <p>Fancon 2018, Cape Town International Convention Centre</p>
+              <p id="responsibilities">Responsibilities	: Team leader, manage 30+ volunteers, assign tasks, local and international guest liason, organiser</p>
+            </div>
+
             <div class="exp_demonstrator">
+                <p>Jan. 2012- Nov. 2015</p>
               <p>Demonstrator</p>
               <p>University of Cape Town, Faculty of Medicine, Department of Human Biology</p>
-              <p>Jan. 2012- Nov. 2015</p>
-              <p>Duties/Responsibilities	: Dissection demonstrator, practical setup and management, oral and practical examinations, examination moderating, forensic casework (including photography, laboratory examinations, case reports), conference attendance and presentations, model and display construction, dissection and practical demonstration safety management</p>
+              <p id="responsibilities">Responsibilities	: Dissection demonstrator, practical setup and management, oral and practical examinations, forensic casework (including photography, laboratory examinations, case reports), conference attendance and presentations, model and display construction, dissection and practical demonstration safety management</p>
             </div>
       
             <div class="exp_alt">
+              <p>July 2010- July 2011</p>
               <p>Assistant Language Teacher</p>
               <p>The Japanese Exchange and Teaching Programme, Kaminoyama City Board of Education</p>
-              <p>July 2010- July 2011</p>
-              </p>Duties/Responsibilities	: Class management, lesson planning and material preparation, student testing, assisting teachers, team-teaching, training students for competitions, educational demonstrations, attendance of school and Board of Education events and extracurricular activities</p>
+              <p id="responsibilities">Responsibilities	: Class management, lesson planning and material preparation, student testing, assisting teachers, team-teaching, training students for competitions, educational demonstrations</p>
+            </div>
+
+            <div class="exp_dj">
+              <p>March 2006- July 209</p>
+              <p>Disk Jockey and Presenter</p>
+              <p>UCT Radio, University of Cape Town</p>
+              <p id="responsibilities">Responsibilities	: Manage and resent own show, training of presenters</p>
             </div>
           </div>
+          </div>
+
+      <!-- portfolio section -->
+      <div id="port_container" class="animated fadeInUpBig">
+        <p><a href="https://github.com/CAClarke?tab=repositories">Github <img src="img/github.png" alt="GitHub"></a></p>
+        <p><a href="https://github.com/CAClarke/blog_challenge">Blog Project <img src="img/blog_index.png" alt="Blog index"></a></p>
+        <p><a href="https://github.com/CAClarke/destinations_project">Travel Project <img src="img/dest_index.png" alt="Destination index"></a></p>     
+      </div>
 
       </div> 
       
@@ -98,11 +109,13 @@
     </div>
 
         <!-- bottom navbar -->
-        <footer id="bottom_nav">
+        <footer>
               
-        <p><a id="contact_jump" class="email_link" href="mailto:CarrieAMClarke@gmail.com?Subject=Hello">&#x2709;</a> CarrieAMClarke@gmail.com</p>
-        <p><p class="phone_number">&#x260e;  072 997 5545 <a href="#" class="icon1"><img src="img/linkedin.png" alt="linkedin"  id="icon"> </a></p> 
-          </p>
+        <a id="contact_jump" class="email_link" href="mailto:CarrieAMClarke@gmail.com?Subject=Hello">&#x2709; CarrieAMClarke@gmail.com</a> 
+        <p class="phone_number">&#x260e;  072 997 5545</p> 
+        <a href="#" class="icon1"><img src="img/linkedin.png" alt="linkedin"  id="icon"> </a>
+        <a href="https://github.com/CAClarke?tab=repositories" class="icon1"><img src="img/github.png" alt="github"  id="icon"> </a>
+        
         
               
       </footer>
@@ -115,8 +128,7 @@
   <script type="text/javascript">
 
     $(document).ready(function(){
-  
-      
+    
    //carousel
     $('.owl-carousel').owlCarousel({
       loop: true,
@@ -138,13 +150,6 @@
     });
 
     //click animation fxn
-
-    $("#nav_btn").click(function() {
-     $("#nav_body").slideToggle( "slow", function() {
-    // Animation complete.
-      });
-    });
-
     $(".edu_toggle").click(function() {
      $("#edu_container").slideToggle( "slow", function() {
     // Animation complete.
@@ -156,6 +161,13 @@
     // Animation complete.
       });
     });
+
+    $(".port_toggle").click(function() {
+     $("#port_container").slideToggle( "slow", function() {
+    // Animation complete.
+      });
+    });
+
     
     });//jquery end
   </script>
