@@ -29,6 +29,7 @@ li{
 
 span{
     padding-right: 15px;
+    font-size: 25px;
 }
 
 // index styling
@@ -47,14 +48,14 @@ span{
   }
 
   #name_card{
-    grid-column: 6/8;
+    grid-column: 6/9;
     grid-row: 2/3;
-    font-size: 35px;
+    font-size: 40px;
     text-align: left;
     padding: 10px;
     z-index: -1;
     height: 65px;
-    margin: 5px 15px 0 105px;
+    margin: 5px 8px 0 105px;
     text-align: right;
   }
 
@@ -66,7 +67,7 @@ span{
     padding: 10px;
     z-index: -1;
     height: 55px;
-    margin-right: 118px;
+    margin: 5px 8px 0 105px;
     margin-top: 10px;
     text-align: right;
   }
@@ -77,8 +78,7 @@ span{
     font-size: 20px;
     text-align: left;
     padding: 25px;
-    z-index: -1;
-    margin-right: 118px;
+    z-index: 5px 8px 0 105px;
     text-align: right;
   }
   
@@ -107,7 +107,7 @@ span{
 #edu_container{
     background-color: $accentColor;
     opacity: 0.8;
-    grid-column: 2/7;
+    grid-column: 3/8;
     grid-row: 2/9;
     display: none;
     line-height: 3;
@@ -123,8 +123,6 @@ span{
 }
 
 .edu_school{
-    grid-column: 4/5;
-    grid-row: 3/9;
     @extend %textPadding;
 }
 
@@ -137,18 +135,11 @@ span{
 #exp_container{
     background-color: $accentColor;
     opacity: 0.7;
-    grid-column: 2/7;
+    grid-column: 3/8;
     grid-row: 2/9;
     display: none;
     color: $baseColor;
     font-size: 18px;
-}
-
-#exp_grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin-top: -40px;
 }
 
 #exp_title{
@@ -156,25 +147,16 @@ span{
 }
 
 .exp_supervisor{
-    grid-column:1/2;
-    grid-row: 1/2;
     @extend %textPadding;
 }
 .exp_demonstrator{
-    grid-column:1/2;
-    grid-row: 2/3;
     @extend %textPadding;
-    margin-top: -55px;
 }
 
 .exp_alt{
-    grid-column: 2/3;
-    grid-row: 1/2;
     @extend %textPadding;
 }
 .exp_dj{
-    grid-column: 2/3;
-    grid-row: 2/3;
     @extend %textPadding;
 }
 
@@ -186,19 +168,20 @@ span{
 #port_container{
     background-color: $accentColor;
     opacity: 0.8;
-    grid-column: 2/7;
+    grid-column: 3/8;
     grid-row: 2/9;
     display: none;
     line-height: 3;
     text-align: center;
-    padding-top: 190px;
     color: $baseColor;
-    img{
-        width: 120px;
+    #port_title{
+        @extend %titleGrid;
     }
-    a{
-        margin-top: 25px;
-        padding: 40px;
+    img{
+        width: 200px;
+    }
+    .github_img{
+        width: 100px;
     }
 }
 
