@@ -17,7 +17,8 @@ li:hover {
 
 #edu_title, #exp_title, #port_container #port_title {
   padding-left: 20px;
-  color: azure; }
+  color: azure;
+  font-family: "Montserrat", sans-serif; }
 
 .edu_code, .edu_school, .edu_other, .exp_supervisor, .exp_demonstrator, .exp_alt, .exp_dj {
   padding-top: 2px;
@@ -107,9 +108,8 @@ span {
   display: grid;
   grid-template-columns: 10% repeat(5, 15%);
   grid-template-rows: repeat(9, 100px);
-  grid-gap: 8px;
+  grid-gap: 10px;
   font-weight: bold;
-  line-height: 2;
   color: white; }
 
 #name_card {
@@ -121,7 +121,8 @@ span {
   z-index: -1;
   height: 65px;
   margin: 5px 8px 0 105px;
-  text-align: right; }
+  text-align: right;
+  font-family: "Montserrat", sans-serif; }
 
 #title_card {
   grid-column: 6/9;
@@ -133,7 +134,8 @@ span {
   height: 55px;
   margin: 5px 8px 0 105px;
   margin-top: 10px;
-  text-align: right; }
+  text-align: right;
+  font-family: "Montserrat", sans-serif; }
 
 #about_card {
   grid-column: 6/9;
@@ -143,7 +145,8 @@ span {
   padding: 15px 15px 0 75px;
   z-index: 5px 8px 0 105px;
   text-align: right;
-  line-height: 2; }
+  line-height: 2;
+  font-family: "Montserrat", sans-serif; }
 
 #edu_btn {
   grid-column: 1/2;
@@ -177,10 +180,10 @@ span {
   grid-row: 2/10;
   display: none;
   color: #cfcfcf;
-  font-size: 18px; }
+  font-size: 20px; }
 
 #responsibilities {
-  font-size: 14px !important; }
+  font-size: 16px !important; }
 
 #port_container {
   background-color: #003530;

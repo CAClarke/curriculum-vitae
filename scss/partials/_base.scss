@@ -41,9 +41,8 @@ span{
     display: grid;
     grid-template-columns: 10% repeat(5,15%);
     grid-template-rows: repeat(9, 100px);
-    grid-gap: 8px;
+    grid-gap: 10px;
     font-weight: bold;
-    line-height: 2;
     color: white;
   }
 
@@ -56,7 +55,8 @@ span{
     z-index: -1;
     height: 65px;
     margin: 5px 8px 0 105px;
-    text-align: right;
+    text-align: right;  
+    font-family: $titleFont;
   }
 
   #title_card{
@@ -70,6 +70,7 @@ span{
     margin: 5px 8px 0 105px;
     margin-top: 10px;
     text-align: right;
+    font-family: $titleFont;
   }
 
   #about_card{
@@ -80,7 +81,8 @@ span{
     padding: 15px 15px 0 75px;
     z-index: 5px 8px 0 105px;
     text-align: right;
-    line-height: 2;
+    line-height: 2; 
+    font-family: $titleFont;
   }
   
 #edu_btn{
@@ -140,7 +142,7 @@ span{
     grid-row: 2/10;
     display: none;
     color: $baseColor;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 #exp_title{
@@ -162,7 +164,7 @@ span{
 }
 
 #responsibilities{
-    font-size: 14px!important;
+    font-size: 16px!important;
 }
 
 //port
