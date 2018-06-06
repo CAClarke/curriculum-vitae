@@ -149,18 +149,24 @@
 
     //click animation fxn
     $(".edu_toggle").click(function() {
+      $("#exp_container").hide();
+      $("#port_container").hide();
      $("#edu_container").slideToggle( "slow", function() {
     // Animation complete.
       });
     });
 
     $(".exp_toggle").click(function() {
+      $("#edu_container").hide();
+      $("#port_container").hide();
      $("#exp_container").slideToggle( "slow", function() {
     // Animation complete.
       });
     });
 
     $(".port_toggle").click(function() {
+      $("#exp_container").hide();
+      $("#edu_container").hide();
      $("#port_container").slideToggle( "slow", function() {
     // Animation complete.
       });
