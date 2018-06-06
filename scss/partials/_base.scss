@@ -55,6 +55,7 @@ span{
     z-index: -1;
     height: 65px;
     margin: 5px 15px 0 105px;
+    text-align: right;
   }
 
   #title_card{
@@ -65,7 +66,9 @@ span{
     padding: 10px;
     z-index: -1;
     height: 55px;
-    margin-left: 105px;
+    margin-right: 118px;
+    margin-top: 10px;
+    text-align: right;
   }
 
   #about_card{
@@ -75,7 +78,8 @@ span{
     text-align: left;
     padding: 25px;
     z-index: -1;
-    margin: -20px 100px 0 105px;
+    margin-right: 118px;
+    text-align: right;
   }
   
 #edu_btn{

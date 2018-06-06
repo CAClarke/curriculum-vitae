@@ -29,14 +29,32 @@ li:hover {
 
 @media only screen and (max-device-width: 1665px) {
   .about {
-    line-height: 1;
-    font-size: 50px; } }
+    line-height: 1; } }
 @media only screen and (max-device-width: 1300px) {
+  #name_card {
+    grid-column: 6/8;
+    margin: 5px 0 0 0 !important; }
+
+  #title_card {
+    grid-column: 6/8;
+    margin: 5px 0 0 0 !important; }
+
+  #about_card {
+    grid-column: 6/9;
+    margin: 5px 0 0 0 !important; }
+
   .director {
-    background-color: white;
     opacity: 0.7;
     z-index: -1;
-    height: 40px; }
+    height: 40px;
+    margin-left: 25px !important;
+    background-color: #fff;
+    opacity: 0.7%;
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 25%;
+    text-align: center !important; }
 
   #exp_grid {
     height: auto;
@@ -117,7 +135,8 @@ span {
   padding: 10px;
   z-index: -1;
   height: 65px;
-  margin: 5px 15px 0 105px; }
+  margin: 5px 15px 0 105px;
+  text-align: right; }
 
 #title_card {
   grid-column: 6/9;
@@ -127,7 +146,9 @@ span {
   padding: 10px;
   z-index: -1;
   height: 55px;
-  margin-left: 105px; }
+  margin-right: 118px;
+  margin-top: 10px;
+  text-align: right; }
 
 #about_card {
   grid-column: 6/9;
@@ -136,7 +157,8 @@ span {
   text-align: left;
   padding: 25px;
   z-index: -1;
-  margin: -20px 100px 0 105px; }
+  margin-right: 118px;
+  text-align: right; }
 
 #edu_btn {
   grid-column: 1/2;

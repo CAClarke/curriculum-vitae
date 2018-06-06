@@ -2,17 +2,39 @@
   and (max-device-width: 1665px){
     .about{
         line-height: 1;
-        font-size: 50px;
     }
   }
 
 @media only screen 
   and (max-device-width: 1300px) {
+
+      #name_card{
+        grid-column: 6/8;
+        margin: 5px 0 0 0 !important;
+      }
+    
+      #title_card{
+        grid-column: 6/8;
+        margin: 5px 0 0 0 !important;
+      }
+    
+      #about_card{
+        grid-column: 6/9;
+        margin: 5px 0 0 0 !important;
+      }
+
     .director{
-        background-color: white;
         opacity: 0.7;
         z-index: -1;
         height: 40px;
+        margin-left: 25px !important;
+        background-color: #fff;
+        opacity: 0.7%;
+        width: 100%;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 25%;
+        text-align: center !important;
     }
     
     #exp_grid{
