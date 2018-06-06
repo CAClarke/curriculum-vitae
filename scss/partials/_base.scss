@@ -80,6 +80,7 @@ span{
     padding: 15px 15px 0 75px;
     z-index: 5px 8px 0 105px;
     text-align: right;
+    line-height: 2;
   }
   
 #edu_btn{
@@ -204,23 +205,16 @@ span{
 //contact nav
 footer{
     display: grid;
-    grid-template-columns: repeat(4,25%);
+    grid-template-columns: repeat(5,20%);
     border-top: $accentColor solid 2px;
-    padding: 10px 35px 0 0;
+    padding: 10px 15px 0 0;
     text-align: center;
     background-color: white;
     height: 70px;
     margin-top: 20px;
-}
-
-.email_link{
-    grid-column: 1/2;
-    font-size: 18px;
-}
-
-.phone_number{
-    grid-column: 2/3;
-    font-size: 15px;
+    #contact_jump, #cv{
+    padding-top: 19px;
+    }
 }
 
 #icon{
