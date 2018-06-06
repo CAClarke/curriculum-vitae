@@ -25,34 +25,28 @@
 
     .director{
         opacity: 0.7;
-        z-index: -1;
         height: 40px;
         margin-left: 25px !important;
         background-color: #fff;
         opacity: 0.7%;
         width: 100%;
         padding-left: 8px;
-        padding-right: 8px;
+        padding-right: 20px;
         border-radius: 25%;
         text-align: center !important;
     }
-    
-    #exp_grid{
-        height: auto;
-        height: 560px;
-    }
 
-    .exp_demonstrator{
-        grid-column: 1/2;
-        overflow:hidden;
-        text-overflow:ellipsis;
-    }
-
-    .exp_alt{
-        grid-column: 2/3;
-        text-overflow: clip;
-        overflow:hidden;
-        text-overflow:ellipsis;
+    .animated{
+        font-size: 18px;
+        span{
+            font-size: 22px;
+        }
+        #responsibilities{
+            font-size: 10px!important;
+        }
+        h1{
+            margin-bottom: -4px;
+        }
     }
 
     #carousel_container{
@@ -64,13 +58,13 @@
     }
 }
 
-@media only screen 
-  and (max-device-width: 1100px) {
-      #edu_container, #exp_container, #port_container{
-          line-height: 1;
-      }
+// @media only screen 
+//   and (max-device-width: 1100px) {
+//       #edu_container, #exp_container, #port_container{
+//           line-height: 1;
+//       }
       
-      #edu_title{
-        margin: -18px;
-      }
-  }
+//       #edu_title{
+//         margin: -18px;
+//       }
+//   }
